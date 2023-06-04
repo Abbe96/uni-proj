@@ -4,8 +4,8 @@
 function click_filter_element (event) {
 
   event.target.classList.toggle("selected")
-  update_programmes();
   
+  update_programmes(); 
  
   /*
     ARGUMENTS
@@ -137,10 +137,8 @@ function create_countries_cities_filters () {
       textContent: city.name,
     });
     dom.dataset.id = city.id;
-
   }
-
-  array_each(COUNTRIES, create_country);
+ array_each(COUNTRIES, create_country);
 }
 
 
@@ -157,7 +155,7 @@ function create_levels_filter () {
     });
     dom.dataset.id = level.id;
   }
-  array_each(LEVELS, create_level);
+    array_each(LEVELS, create_level);
 }
 // Create Subjects Filter
 function create_subjects_filter () {
